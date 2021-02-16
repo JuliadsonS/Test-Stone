@@ -5,7 +5,7 @@ let items = [
         amount: 10,
         price: {
             unit: 200,
-            peso: 0,
+            weight: 0,
             pack: 2000
         }
     },
@@ -14,7 +14,7 @@ let items = [
         amount: 20,
         price: {
             unit: 100,
-            peso: 0,
+            weight: 0,
             pack: 2000
         }
     },
@@ -23,7 +23,7 @@ let items = [
         amount: 15,
         price: {
             unit: 100,
-            peso: 0,
+            weight: 0,
             pack: 1500
         }
     }
