@@ -1,8 +1,8 @@
 var items = require('./items')
 var clients = require('./clients')
 
-const AccountList = function (listItems, listClients) {
-    let totalItems = listItems.reduce((acc, item) => acc += item.price.unit * item.amount, 0)
+const AccountList = function (listItems, listClients, typeUnit) {
+    let totalItems = listItems.reduce((acc, item) => acc += item.price[typeUnit] * item.amount, 0)
     let result = listClients.map(item => {
         return {
             client: item,
@@ -18,4 +18,4 @@ const AccountList = function (listItems, listClients) {
     return result
 }
 
-console.log("Result: ", AccountList(items, clients))
+console.log("Result: ", AccountList(items, clients, "pack"))
