@@ -8,7 +8,6 @@ const accountList = function (listItems, listClients, typeUnit) {
 
     let totalItems = listItems.reduce((acc, item) => acc += item.price[typeUnit] * item.amount, 0)
     listClients.map(item => result[item] = parseInt((totalItems / clients.length).toFixed(0)))
-    result.reduce((acc, item) => acc += item, 0)
 
     for (const item in result) {
         valid += result[item]
